@@ -60,7 +60,8 @@ class HomeSplash extends React.Component {
             <Button href="#python">Python</Button>
             <Button href="#java">Java</Button>
             <Button href="#javascript">JavaScript</Button>
-            <Button href="#others">Other Languages</Button>
+            <Button href="#haskell">Haskell</Button>
+            <Button href="#misc">Misc</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -89,7 +90,6 @@ const Showcase = (props) => (
 class Index extends React.Component {
   render() {
     const products = (language) => (siteConfig.products || [])
-      .filter((product) => product.pinned)
       .filter((product) => product.language === language)
       .map((product, i) => {
         return { content: 'TODO', title: product.caption }
@@ -102,7 +102,8 @@ class Index extends React.Component {
           <Showcase id="python" languageName="Python" products={products('python')} />
           <Showcase id="java" languageName="Java" products={products('java')} />
           <Showcase id="javascript" languageName="JavaScript" products={products('javascript')} />
-          <Showcase id="others" languageName="Other Languages" products={products('others')} />
+          <Showcase id="haskell" languageName="Haskell" products={products('haskell')} />
+          <Showcase id="misc" languageName="Misc" products={products('misc')} />
         </div>
       </div>
     )

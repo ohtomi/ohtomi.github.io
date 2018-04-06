@@ -27,7 +27,7 @@ const products = [
   {
     caption: 'lazybones-templates',
     infoLink: 'https://github.com/ohtomi/lazybones-templates',
-    language: 'others',
+    language: 'misc',
     pinned: true,
   },
   {
@@ -35,6 +35,30 @@ const products = [
     infoLink: 'https://github.com/ohtomi/aws-vapor',
     language: 'python',
     pinned: true,
+  },
+  {
+    caption: 'mac-os-x-setup',
+    infoLink: 'https://github.com/ohtomi/mac-os-x-setup',
+    language: 'misc',
+    pinned: false,
+  },
+  {
+    caption: 'homebrew-repos',
+    infoLink: 'https://github.com/ohtomi/homebrew-repos',
+    language: 'misc',
+    pinned: false,
+  },
+  {
+    caption: 'ansible-role-jenkins2',
+    infoLink: 'https://github.com/ohtomi/ansible-role-jenkins2',
+    language: 'misc',
+    pinned: false,
+  },
+  {
+    caption: 'ansible-role-nexus3',
+    infoLink: 'https://github.com/ohtomi/ansible-role-nexus3',
+    language: 'misc',
+    pinned: false,
   },
 ]
 

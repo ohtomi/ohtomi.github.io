@@ -7,6 +7,7 @@ const pageUrl = (page) => `${siteConfig.baseUrl}${page}`
 
 const showcase = (language) => {
   return (siteConfig.products || [])
+    .filter((product) => product.pinned)
     .filter((product) => product.language === language)
     .map((product, i) => (
       <a href={product.infoLink} key={i}>
@@ -38,8 +39,12 @@ class Footer extends React.Component {
             {showcase('javascript')}
           </div>
           <div>
-            <h5>Other Languages</h5>
-            {showcase('others')}
+            <h5>Haskell</h5>
+            {showcase('haskell')}
+          </div>
+          <div>
+            <h5>Misc</h5>
+            {showcase('misc')}
           </div>
           <div>
             <h5>More</h5>
