@@ -10,8 +10,8 @@ const showcase = (language) => {
     .filter((product) => product.pinned)
     .filter((product) => product.language === language)
     .map((product, i) => (
-      <a href={product.infoLink} key={i}>
-        {product.caption}
+      <a href={product.repository} key={i}>
+        {product.name}
       </a>
     ))
 }
@@ -43,8 +43,8 @@ class Footer extends React.Component {
             {showcase('haskell')}
           </div>
           <div>
-            <h5>Misc</h5>
-            {showcase('misc')}
+            <h5>Others</h5>
+            {showcase('')}
           </div>
           <div>
             <h5>More</h5>

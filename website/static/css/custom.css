@@ -12,3 +12,44 @@
 
 @media only screen and (min-width: 1500px) {
 }
+
+.blockContent a:last-child {
+    margin: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(46, 133, 85);
+    border-image: initial;
+    /* border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial; */
+    border-radius: 3px;
+    color: rgb(46, 133, 85);
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2em;
+    padding: 4px;
+    text-transform: uppercase;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: initial, initial;
+    transition-delay: initial, initial;
+    transition-property: background, color;
+    text-decoration: none;
+}
+
+.blockContent a:last-child:hover {
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(46, 133, 85);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}

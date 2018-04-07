@@ -56,11 +56,9 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle />
           <PromoSection>
-            <Button href="#golang">Go</Button>
-            <Button href="#python">Python</Button>
-            <Button href="#java">Java</Button>
-            <Button href="#javascript">JavaScript</Button>
-            <Button href="#haskell">Haskell</Button>
+            <Button href="#tool">Tool</Button>
+            <Button href="#library">Library</Button>
+            <Button href="#devops">DevOps</Button>
             <Button href="#misc">Misc</Button>
           </PromoSection>
         </div>
@@ -80,8 +78,8 @@ const Block = (props) => (
 
 const Showcase = (props) => (
   <div className="productShowcaseSection" style={{ textAlign: 'center' }}>
-    <h2>{props.languageName} products</h2>
-    <Block id={props.id} layout="fourColumn">
+    <h2>{props.category}</h2>
+    <Block id={props.id} layout="threeColumn">
       {props.products}
     </Block>
   </div>
@@ -89,21 +87,22 @@ const Showcase = (props) => (
 
 class Index extends React.Component {
   render() {
-    const products = (language) => (siteConfig.products || [])
-      .filter((product) => product.language === language)
+    const products = (category) => (siteConfig.products || [])
+      .filter((product) => product.category === category)
       .map((product, i) => {
-        return { content: 'TODO', title: product.caption }
+        return {
+          content: `${product.description}<br/>[repo](${product.repository})`,
+          title: product.name,
+        }
       })
     return (
       <div>
         <HomeSplash />
         <div className="mainContainer">
-          <Showcase id="golang" languageName="Go" products={products('go')} />
-          <Showcase id="python" languageName="Python" products={products('python')} />
-          <Showcase id="java" languageName="Java" products={products('java')} />
-          <Showcase id="javascript" languageName="JavaScript" products={products('javascript')} />
-          <Showcase id="haskell" languageName="Haskell" products={products('haskell')} />
-          <Showcase id="misc" languageName="Misc" products={products('misc')} />
+          <Showcase id="tool" category="Tool" products={products('tool')} />
+          <Showcase id="library" category="Library" products={products('library')} />
+          <Showcase id="devops" category="DevOps" products={products('devops')} />
+          <Showcase id="misc" category="Misc" products={products('misc')} />
         </div>
       </div>
     )
