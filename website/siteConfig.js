@@ -6,6 +6,7 @@ const products = [
     language: 'go',
     category: 'tool',
     description: 'gomoku can help you make a HTTP server written in your favorite languages.',
+    demo: '',
     pinned: true,
   },
   {
@@ -14,6 +15,7 @@ const products = [
     language: 'go',
     category: 'tool',
     description: 'This tool provides command line interface for scrapbox.io.',
+    demo: '',
     pinned: true,
   },
   {
@@ -22,6 +24,7 @@ const products = [
     language: 'javascript',
     category: 'library',
     description: 'A whiteboard React component using SVG.',
+    demo: 'react-whiteboard.html',
     pinned: true,
   },
   {
@@ -30,6 +33,7 @@ const products = [
     language: 'javascript',
     category: 'library',
     description: 'A higher order component for react-handsontable.',
+    demo: 'react-handsontable-hoc.html',
     pinned: true,
   },
   {
@@ -37,7 +41,8 @@ const products = [
     repository: 'https://github.com/ohtomi/lazybones-templates',
     language: '',
     category: 'tool',
-    description: 'Lazybones (https://github.com/pledbrook/lazybones) templates',
+    description: '[Lazybones](https://github.com/pledbrook/lazybones) templates',
+    demo: '',
     pinned: true,
   },
   {
@@ -46,6 +51,7 @@ const products = [
     language: 'python',
     category: 'devops',
     description: 'This tool generates AWS Cloudformation template from python object.',
+    demo: '',
     pinned: true,
   },
   {
@@ -54,6 +60,7 @@ const products = [
     language: '',
     category: 'misc',
     description: 'dot files',
+    demo: '',
     pinned: false,
   },
   {
@@ -62,6 +69,7 @@ const products = [
     language: '',
     category: 'misc',
     description: 'Provisioning MacBook Pro using Ansible 2.x.',
+    demo: '',
     pinned: false,
   },
   {
@@ -70,6 +78,7 @@ const products = [
     language: '',
     category: 'misc',
     description: 'Homebrew custom repository.',
+    demo: '',
     pinned: false,
   },
   {
@@ -78,6 +87,7 @@ const products = [
     language: '',
     category: 'devops',
     description: 'This role can be used to install Jenkins 2.',
+    demo: '',
     pinned: false,
   },
   {
@@ -86,6 +96,7 @@ const products = [
     language: '',
     category: 'devops',
     description: 'This role can be used to install Nexus Repository Manager 3.',
+    demo: '',
     pinned: false,
   },
 ]

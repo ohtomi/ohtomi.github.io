@@ -87,11 +87,13 @@ const Showcase = (props) => (
 
 class Index extends React.Component {
   render() {
+    const repo = (product) => `[[REPO]](${product.repository})`
+    const demo = (product) => product.demo ? `[[DEMO]](${pageUrl(product.demo)})` : ''
     const products = (category) => (siteConfig.products || [])
       .filter((product) => product.category === category)
       .map((product, i) => {
         return {
-          content: `${product.description}<br/>[repo](${product.repository})`,
+          content: `${product.description}<br/>${repo(product)}${demo(product)}`,
           title: product.name,
         }
       })
