@@ -88,7 +88,16 @@ const Showcase = (props) => (
 class Index extends React.Component {
   render() {
     const repo = (product) => `[[REPO]](${product.repository})`
-    const demo = (product) => product.demo ? `[[DEMO]](${pageUrl(product.demo)})` : ''
+    const demo = (product) => {
+      if (!product.demo) {
+        return ''
+      }
+      if (product.demo.startsWith('https://ohtomi.github.io/')) {
+        return `[[DEMO]](${product.demo})`
+      } else {
+        return `[[DEMO]](${pageUrl(product.demo)})`
+      }
+    }
     const products = (category) => (siteConfig.products || [])
       .filter((product) => product.category === category)
       .map((product, i) => {

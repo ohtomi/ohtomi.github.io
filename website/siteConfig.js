@@ -24,7 +24,7 @@ const products = [
     language: 'javascript',
     category: 'library',
     description: 'A whiteboard React component using SVG.',
-    demo: 'react-whiteboard.html',
+    demo: 'https://ohtomi.github.io/react-whiteboard/',
     pinned: true,
   },
   {
