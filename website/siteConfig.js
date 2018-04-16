@@ -112,8 +112,6 @@ const siteConfig = {
   users,
   products,
   headerLinks: [
-    { doc: 'products', label: 'Products' },
-    { doc: 'demo', label: 'Demo' },
     { blog: true, label: 'Blog' },
     { href: "https://github.com/ohtomi", label: "GitHub" },
   ],
