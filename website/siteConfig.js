@@ -33,7 +33,7 @@ const products = [
     language: 'javascript',
     category: 'library',
     description: 'A higher order component for react-handsontable.',
-    demo: 'react-handsontable-hoc.html',
+    demo: 'https://ohtomi.github.io/react-handsontable-hoc/',
     pinned: true,
   },
   {
